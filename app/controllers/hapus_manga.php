@@ -5,7 +5,7 @@ require_once __DIR__ . '/../Config/koneksi.php';
 
 // 1. Proteksi Admin
 if (!isset($_SESSION['role']) || $_SESSION['role'] !== 'admin') {
-    header("Location: /mangamaru/auth/login.php");
+    header("Location: /auth/login.php");
     exit;
 }
 
@@ -34,12 +34,12 @@ if ($id) {
         // menghapus manga akan otomatis menghapus chapter terkait di tabel chapters.
         $database->delete("manga", ["id" => $id]);
 
-        header("Location: /mangamaru/views/admin/dashboard.php?msg=Manga dan seluruh kontennya berhasil dihapus");
+        header("Location: /views/admin/dashboard.php?msg=Manga dan seluruh kontennya berhasil dihapus");
         exit;
     }
 }
 
-header("Location: /mangamaru/views/admin/dashboard.php?error=Gagal menghapus data");
+header("Location: /views/admin/dashboard.php?error=Gagal menghapus data");
 exit;
 
 /**

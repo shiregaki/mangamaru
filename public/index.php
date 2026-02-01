@@ -94,9 +94,9 @@ include __DIR__ . '/../views/layout/header.php';
                         ?>
                         <span class="badge <?= $badgeColor ?> badge-type"><?= $m['type'] ?></span>
                         <a href="lihat_manga.php?slug=<?= $m['slug'] ?>">
-                            <img src="/mangamaru/public/uploads/covers/<?= $m['cover_image'] ?>" 
+                            <img src="uploads/covers/<?= $m['cover_image'] ?>" 
                                  alt="<?= $m['title'] ?>"
-                                 onerror="this.src='/mangamaru/public/uploads/covers/default_cover.jpg'">
+                                 onerror="this.src='uploads/covers/default_cover.jpg'">
                         </a>
                     </div>
                     <div class="card-body p-3 text-center">

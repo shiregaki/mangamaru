@@ -27,7 +27,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $upload_path = $upload_dir . $cover_name;
 
         if (!move_uploaded_file($_FILES['cover_image']['tmp_name'], $upload_path)) {
-            header("Location: /mangamaru/views/admin/tambah_manga.php?error=Gagal%20simpan%20gambar");
+            header("Location: /views/admin/tambah_manga.php?error=Gagal%20simpan%20gambar");
             exit;
         }
     }
@@ -41,6 +41,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         "cover_image" => $cover_name
     ]);
 
-    header("Location: /mangamaru/views/admin/dashboard.php?msg=Manga%20Berhasil%20Ditambah");
+    header("Location: /views/admin/dashboard.php?msg=Manga%20Berhasil%20Ditambah");
     exit;
 }

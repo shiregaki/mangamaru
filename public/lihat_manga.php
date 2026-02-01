@@ -35,7 +35,7 @@ include __DIR__ . '/../views/layout/header.php';
         position: relative;
         padding: 80px 0 60px;
         background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.95)), 
-                    url('/mangamaru/public/uploads/covers/<?= $manga['cover_image'] ?>');
+                    url('uploads/covers/<?= $manga['cover_image'] ?>');
         background-size: cover;
         background-position: center;
         color: white;
@@ -108,9 +108,9 @@ include __DIR__ . '/../views/layout/header.php';
     <div class="container">
         <div class="row align-items-center">
             <div class="col-md-3">
-                <img src="/mangamaru/public/uploads/covers/<?= $manga['cover_image'] ?>" 
+                <img src="uploads/covers/<?= $manga['cover_image'] ?>" 
                      class="manga-cover-big shadow" alt="<?= $manga['title'] ?>"
-                     onerror="this.src='/mangamaru/public/uploads/covers/default_cover.jpg'">
+                     onerror="this.src='uploads/covers/default_cover.jpg'">
             </div>
             <div class="col-md-9">
                 <h1 class="display-5 fw-800 mb-3"><?= htmlspecialchars($manga['title']) ?></h1>

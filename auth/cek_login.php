@@ -25,9 +25,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
             // Redirect sesuai role
             if ($_SESSION['role'] === 'admin') {
-                header("Location: /mangamaru/views/admin/dashboard.php");
+                header("Location: views/admin/dashboard.php");
             } else {
-                header("Location: /mangamaru/public/index.php");
+                header("Location: /index.php");
             }
             exit;
         } else {

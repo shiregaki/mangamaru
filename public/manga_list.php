@@ -45,9 +45,9 @@ include __DIR__ . '/../views/layout/header.php';
             <div class="col-6 col-sm-4 col-md-3 col-lg-2">
                 <div class="card h-100 border-0 shadow-sm rounded-3 overflow-hidden">
                     <div class="position-relative">
-                        <img src="/mangamaru/public/uploads/covers/<?= $m['cover_image'] ?>" 
+                        <img src="uploads/covers/<?= $m['cover_image'] ?>" 
                              class="card-img-top" style="aspect-ratio: 3/4; object-fit: cover;"
-                             onerror="this.src='/mangamaru/public/uploads/covers/default_cover.jpg'">
+                             onerror="this.src='uploads/covers/default_cover.jpg'">
                         <span class="badge bg-dark position-absolute top-0 start-0 m-2" style="font-size: 0.6rem;">
                             <?= $m['type'] ?>
                         </span>

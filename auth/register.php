@@ -2,7 +2,7 @@
 session_start();
 // Proteksi: Jika sudah login tidak bisa akses halaman register
 if (isset($_SESSION['user_id'])) {
-    header("Location: /mangamaru/");
+    header("Location: /index.php");
     exit;
 }
 ?>
@@ -13,8 +13,8 @@ if (isset($_SESSION['user_id'])) {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Daftar Member - MangaMaru</title>
-    
-    <link rel="icon" type="image/png" href="/mangamaru/assets/logo.png">
+
+    <link rel="icon" type="image/png" href="assets/logo.png">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
@@ -39,7 +39,7 @@ if (isset($_SESSION['user_id'])) {
 
 <div class="register-card">
     <div class="brand-logo">
-        <img src="/mangamaru/assets/logo.png" alt="Logo">
+        <img src="assets/logo.png" alt="Logo">
         <h4>MANGA<span>MARU</span></h4>
     </div>
 

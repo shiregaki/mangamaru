@@ -3,7 +3,7 @@ session_start();
 
 // Jika sudah login, langsung lempar ke beranda
 if (isset($_SESSION['user_id'])) {
-    header("Location: /mangamaru/");
+    header("Location: /index.php");
     exit;
 }
 
@@ -17,7 +17,7 @@ $error = isset($_GET['error']) ? $_GET['error'] : '';
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login - MangaMaru</title>
-    <link rel="icon" type="image/png" href="/mangamaru/assets/logo.png">
+    <link rel="icon" type="image/png" href="assets/logo.png">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
@@ -43,7 +43,7 @@ $error = isset($_GET['error']) ? $_GET['error'] : '';
 
 <div class="login-card">
     <div class="brand-logo">
-        <img src="/mangamaru/assets/logo.png" alt="Logo">
+        <img src="assets/logo.png" alt="Logo">
         <h4>MANGA<span>MARU</span></h4>
     </div>
 
@@ -75,7 +75,7 @@ $error = isset($_GET['error']) ? $_GET['error'] : '';
     </div>
 
     <div class="text-center mt-4">
-        <a href="/mangamaru/" class="back-link">
+        <a href="/index.php" class="back-link">
             <i class="fas fa-arrow-left me-1"></i> Kembali ke Beranda
         </a>
     </div>

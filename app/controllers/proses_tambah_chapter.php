@@ -35,6 +35,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     }
 
     // Redirect kembali ke dashboard admin
-    header("Location: /mangamaru/views/admin/dashboard.php?msg=Chapter Berhasil Ditambah");
+    header("Location: /views/admin/dashboard.php?msg=Chapter Berhasil Ditambah");
     exit;
 }
