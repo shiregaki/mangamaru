@@ -1,6 +1,6 @@
 <?php
 session_start();
-require_once __DIR__ . '/../app/Config/koneksi.php';
+require_once __DIR__ . '/../app/config/koneksi.php';
 
 $title = "Beranda"; 
 
