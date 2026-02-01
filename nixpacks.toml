@@ -1,0 +1,2 @@
+[phases.setup]
+extensions = ["pdo", "pdo_mysql"]
